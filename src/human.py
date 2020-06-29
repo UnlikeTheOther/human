@@ -1,10 +1,10 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
-"""
+#-*- coding: utf-8 -*-
+'''
 Created on Mon Jun 29 14:53:00 2020
 
 @author: bvignau
-"""
+'''
 
 class Human :
 	'''
@@ -25,7 +25,8 @@ class Human :
 		'''
 			Display the content of the Human object.
 		'''
-		return (f"Name: {self.name}, \nAge: {self.age} years-old, \nSize: {self.size} cm, \nWeight: {self.weight} kg, \n Hungry: {self.hunger}/100 \n")
+		return("Name: {0}, \nAge; {1} years-old, \nSize; {2} cm, \n Weight: {3} cm, \n".format(self.name, self.age, self.size, self.weight))
+		#return ("Name: {self.name}, \nAge: {self.age} years-old, \nSize: {self.size} cm, \nWeight: {self.weight} kg, \n Hungry: {self.hunger}/100 \n")
 
 	def eat(self, food_point):
 		'''
@@ -40,10 +41,10 @@ class Human :
 		'''
 		assert isinstance(food_point, int), "Attribut 'food_point' : doit être un entier (instance de 'int')"
 		if self.hunger >= 100:
-			print(f"{self.name} has already eat as well (hunger: {self.hunger})")
+			print("{self.name} has already eat as well (hunger: {self.hunger})")
 		else:
 			self.hunger += food_point
 			if self.hunger > 100:
 				print("That is a fabulous meal!")
 				self.hunger = 100
-			print(f"{self.name} has eat (hunger: {self.hunger})")
+			print("{0} has eat (hunger: {1})".format(self.name, self.hunger))
