@@ -25,7 +25,7 @@ class Human :
 		'''
 			Display the content of the Human object.
 		'''
-		return f"Name: {self.name}, \nAge: {self.age} years-old, \nSize: {self.size} cm, \nWeight: {self.weight} kg, \nHungry: {self.hunger}/100 \n" 
+		return (f"Name: {self.name}, \nAge: {self.age} years-old, \nSize: {self.size} cm, \nWeight: {self.weight} kg, \n Hungry: {self.hunger}/100 \n")
 
 	def eat(self, food_point):
 		'''
