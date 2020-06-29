@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jun 29 14:53:00 2020
@@ -24,7 +25,7 @@ class Human :
 		'''
 			Display the content of the Human object.
 		'''
-		return f"Name: {self.name}, \nAge: {self.age} years-old, \nSize: {self.size} cm, \nWeight: {self.weight} kgHungry: {self.hunger}/100\n" 
+		return f"Name: {self.name}, \nAge: {self.age} years-old, \nSize: {self.size} cm, \nWeight: {self.weight} kg, \nHungry: {self.hunger}/100 \n" 
 
 	def eat(self, food_point):
 		'''
